@@ -1,0 +1,14 @@
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\bin\Debug\net8.0\HerençaContaBancaria.exe
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\bin\Debug\net8.0\HerençaContaBancaria.deps.json
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\bin\Debug\net8.0\HerençaContaBancaria.runtimeconfig.json
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\bin\Debug\net8.0\HerençaContaBancaria.dll
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\bin\Debug\net8.0\HerençaContaBancaria.pdb
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\obj\Debug\net8.0\HerençaContaBancaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\obj\Debug\net8.0\HerençaContaBancaria.AssemblyInfoInputs.cache
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\obj\Debug\net8.0\HerençaContaBancaria.AssemblyInfo.cs
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\obj\Debug\net8.0\HerençaContaBancaria.csproj.CoreCompileInputs.cache
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\obj\Debug\net8.0\HerençaContaBancaria.dll
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\obj\Debug\net8.0\refint\HerençaContaBancaria.dll
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\obj\Debug\net8.0\HerençaContaBancaria.pdb
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\obj\Debug\net8.0\HerençaContaBancaria.genruntimeconfig.cache
+C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\obj\Debug\net8.0\ref\HerençaContaBancaria.dll
