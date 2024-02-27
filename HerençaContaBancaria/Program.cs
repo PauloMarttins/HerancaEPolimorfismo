@@ -1,5 +1,7 @@
 ﻿using System;
 using HerençaContaBancaria.Entities;
+using System.Collections.Generic;
+using System.Globalization;
 
 
 
@@ -9,60 +11,53 @@ namespace HerançaContaBancaria
     {
         static void Main(string[] args)
         {
-            //amount = quantia.
-            //override = sobrescrever.(ressignificar).
-            //Balance = saldo.
-            //Withdraw = sacar.
-            //Loan = empréstimo.
-            //Holder = titular.
-            //Interest Rate = taxa de juros.
+            //SuperClasse generica.
+            //Declaração da variavel list do tipo Account.
+            //Instanciação do ArrayList.
+           List<Account> list = new List<Account>();
 
-            //A seguir, utiliza-se a tecnica de polimorfismo para instaciar duas variaveis do mesmo tipo com objetos diferentes.
-            // ou seja, Duas variaveis do tipo Account. porém.
-            //Uma variavel recebe o objeto Account e a outra variavel recebe o objeto SavingAccount.
+            //Os parametros são respectivamente: Id, Nome, Saldo, taxa de juros mensal.
+            list.Add(new SavingsAccount(1001, "Alex", 500.0, 0.01));
 
-            //É importante que os argumentos que estao como parametro, estejam na ordem correta em relação aos argumentos da classe account.
-            Account acc1 = new Account(1001, "Alex", 500.0);
-           //Instanciação da variavel account do tipo (BusinessAccount) que recebe o Id, nome e saldo da conta, e limite de saque.
-           //(Id, Titular, Saldo, taxa de Juros) 
-           //Os parametros desse comando devem estar na ordem correta em relação as variaveis apresentadas como parametro no construtor
-           // da classe SavingAccount.
-            Account acc2 = new SavingsAccount(1002, "Bejnamin", 500.0, 0.01);
+            //Os parametros são respectivamente: Id, Nome, Saldo, Limite.
+            list.Add(new BusinessAccount(1002, "Maria", 500.0, 400.0));
 
-            //Os comandos para saque se comportam diferentes por conta da utilização do polimorfismo nos comandos à cima.
-            acc1.Withdraw(10.0);
-            acc2.Withdraw(10.0);
+            //Os parametros são respectivamente: Id, Nome, Saldo, taxa de juros mensal.
+            list.Add(new SavingsAccount(1003, "Bob", 500.0, 0.01));
 
-            Console.WriteLine(acc1.Balance);
-            Console.WriteLine(acc2.Balance);
+            //Os parametros são respectivamente: Id, Nome, Saldo, Limite.
+            list.Add(new BusinessAccount(1004, "Anna", 500.0, 500.0));
 
-            //UpCasting
-            //Account acc1 = bacc;
-            //Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0);
-            //Account acc3 = new SavingsAccount(1004, "Anna", 0.0, 0.01);
+            //Declaração da variavel sum que recebe o valor inicial de 0.0 (double).
+            double sum = 0.0;
 
-            ////DownCasting (operação insegura)
-            //BusinessAccount acc4 = (BusinessAccount)acc2;
-            //acc4.Loan(100.0);
+            //Para cada Conta acc na Lista, faça:
+            foreach (Account acc in list)
+            { 
+                //Soma recebe soma mais saldo.
+                sum += acc.Balance;
+            }
 
-            ////Se esses comandos forem realizados fora do if, dará erro, pois o DownCasting é uma operação insegura.
-            //if (acc3 is BusinessAccount)
-            //{
-            //    //Duas alternativas pra mesma função:
-            //    //BusinessAccount acc5 = (BusinessAccount)acc3;
-            //    //BusinessAccount acc5 = acc3 as BusinessAccount;
-            //    BusinessAccount acc5 = (BusinessAccount)acc3;
-            //    acc5.Loan(200.0);
-            //    Console.WriteLine("Loan!");
-            //}
-            
-            ////Se esses comandos forem realizados fora do if, dará erro, pois o DownCasting é uma operação insegura.
-            //if (acc3 is SavingsAccount)
-            //{
-            //    SavingsAccount acc5 = (SavingsAccount)acc3;
-            //    acc5.UpdateBalance();
-            //    Console.WriteLine("Update!");
-            //}
+            //O console irá escrever o valor total do saldo.
+            //utiliza-se o ToString com o CultureInfo para que o valor apareça em formato moeda.
+            Console.WriteLine("Total balance: " + sum.ToString("C2", CultureInfo.CurrentCulture));
+
+            //Para cada conta acc no ArrayList, faça:
+            foreach (Account acc in list)
+            {
+                //Conta acc recebe um saque de 10 reais.
+                acc.Withdraw(10.0);
+            }
+            //Para cada conta acc no ArrayList, faça:
+            foreach (Account acc in list)
+            {
+                //Console escreve O saldo atualizado da conta: numero da conta e o saldo da conta no formato moeda. (Concatenação)
+                Console.WriteLine("Updated balance for account"
+                    + acc.Number
+                    + ": "
+                    + acc.Balance.ToString("C2", CultureInfo.InvariantCulture)
+                    );
+            }
         }
     }
 }

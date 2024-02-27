@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PrecisoTax\\Desktop\\projetPaulo\\HerençaContaBancaria\\HerençaContaBancaria\\HerençaContaBancaria.csproj": {}
+    "C:\\Users\\PrecisoTax\\Desktop\\clone\\HerancaEPolimorfismo2\\HerençaContaBancaria\\HerençaContaBancaria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PrecisoTax\\Desktop\\projetPaulo\\HerençaContaBancaria\\HerençaContaBancaria\\HerençaContaBancaria.csproj": {
+    "C:\\Users\\PrecisoTax\\Desktop\\clone\\HerancaEPolimorfismo2\\HerençaContaBancaria\\HerençaContaBancaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PrecisoTax\\Desktop\\projetPaulo\\HerençaContaBancaria\\HerençaContaBancaria\\HerençaContaBancaria.csproj",
+        "projectUniqueName": "C:\\Users\\PrecisoTax\\Desktop\\clone\\HerancaEPolimorfismo2\\HerençaContaBancaria\\HerençaContaBancaria.csproj",
         "projectName": "HerençaContaBancaria",
-        "projectPath": "C:\\Users\\PrecisoTax\\Desktop\\projetPaulo\\HerençaContaBancaria\\HerençaContaBancaria\\HerençaContaBancaria.csproj",
+        "projectPath": "C:\\Users\\PrecisoTax\\Desktop\\clone\\HerancaEPolimorfismo2\\HerençaContaBancaria\\HerençaContaBancaria.csproj",
         "packagesPath": "C:\\Users\\PrecisoTax\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PrecisoTax\\Desktop\\projetPaulo\\HerençaContaBancaria\\HerençaContaBancaria\\obj\\",
+        "outputPath": "C:\\Users\\PrecisoTax\\Desktop\\clone\\HerancaEPolimorfismo2\\HerençaContaBancaria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

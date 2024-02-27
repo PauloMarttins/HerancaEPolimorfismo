@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HerençaContaBancaria
-build_property.ProjectDir = C:\Users\PrecisoTax\Desktop\projetPaulo\HerençaContaBancaria\HerençaContaBancaria\
+build_property.ProjectDir = C:\Users\PrecisoTax\Desktop\clone\HerancaEPolimorfismo2\HerençaContaBancaria\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

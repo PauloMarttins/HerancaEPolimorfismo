@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HerençaContaBancaria.Entities
 {
-    internal class Account
+    abstract class Account
     {
         //A propriedade Number do tipo inteiro é o numero da conta.
         public int Number { get; private set; }
@@ -24,6 +24,8 @@ namespace HerençaContaBancaria.Entities
 
         //Através do Construtor Account, cada propriedade declarada anteriormente, receberá como valores, respectivamente, cada uma das variaveis
         //declaradas como referencia deste construtor.
+
+
         public Account(int number, string holder, double balance)
         {
             Number = number;

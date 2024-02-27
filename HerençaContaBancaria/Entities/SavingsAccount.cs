@@ -44,8 +44,10 @@ namespace HerençaContaBancaria.Entities
         //O uso do termo (sealed) Impossibilita que essa operação seja sobrescrita novamente.(O metodo está selado)
         public sealed override void Withdraw(double amount) 
         {
+            //A palavra chave (base.) indica que o sistema deve buscar o lagoritmo do Withdraw que está localizado na classe Accoount.
+            base.Withdraw(amount);
             //Saldo recebe salado menos quantia de saque.
-            Balance -= amount;
+            Balance -= 2.0;
         }
     }
 }
